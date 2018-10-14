@@ -12,7 +12,7 @@ public class PersonTest {
         Person.Heart heart2 = new Person().new Heart();
         //通常会给内部类准备一个get方法，在get方法内对内部类进行初始化
         //person.getHeart()是无返回值的，而给变量heart3赋值是需要返回值的，所以会这里直接用person.getHeart()方法会报错
-        //Person.Heart heart3 = person.getHeart();
+        //Student.Heart heart3 = person.getHeart();
 
         Person.Heart heart4 = person.getHeart2();
         System.out.println(heart4.beat());
