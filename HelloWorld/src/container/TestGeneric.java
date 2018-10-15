@@ -1,4 +1,4 @@
-package collection;
+package container;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -11,8 +11,8 @@ public class TestGeneric {
     }
 
     public void testAdd(){
-        Course course9 = new Course(9,"昕爷");
-        Course course10 = new Course(10,"王晓妮");
+        Course course9 = new Course("9","昕爷");
+        Course course10 = new Course("10","王晓妮");
         coursesList.add(course9);
         coursesList.add(course10);
         System.out.println("通过泛型，指定元素类型来向集合中添加元素:"+course9.name+","+course10.name);
@@ -31,7 +31,7 @@ public class TestGeneric {
     public void testChild(){
         ChildCourse childCourse = new ChildCourse();
         coursesList.add(childCourse);
-        childCourse.id = 12;
+        childCourse.id = "12";
         childCourse.name = "赛赛";
         System.out.println("泛型子类向集合中添加元素：");
     }
