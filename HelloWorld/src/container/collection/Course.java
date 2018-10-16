@@ -1,4 +1,4 @@
-package container;
+package container.collection;
 
 public class Course {
     //练习用，所以参数的属性设置成了public
