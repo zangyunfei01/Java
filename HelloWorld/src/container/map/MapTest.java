@@ -50,18 +50,24 @@ public class MapTest {
         }
     }
 
-    //输入完毕后，遍历打印输出集合中的学生信息
+    //输入完毕后，用keySet方法遍历，打印输出集合中的学生信息
     public void testKeySet() {
         System.out.println("学生数量为：" + students.size());
+        //规定了key是String类型，所以，用一个泛型为String类型的Set对象，去接受keySet()方法的返回值。
         //通过keySet方法，返回Map中所有"键"的集合
         Set<String> studentKeySet = students.keySet();
-        //遍历keySet，取得keySet中返回的每一个键；再调用get方法，取得每一个键所对应的值
+        //遍历studentKeySet，取得studentKeySet中返回的每一个键；再调用get方法，取得每一个键所对应的值
         for (String studentID : studentKeySet) {
             Student studentValue = students.get(studentID);
             if (studentValue != null) {
                 System.out.println(studentValue.name);
             }
         }
+    }
+
+    public void testKeySetFangFa(){
+        Set<String> keySet = students.keySet();
+
     }
 
     //通过endtySet方法来遍历集合，返回Map中的所有键值对
