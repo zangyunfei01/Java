@@ -62,9 +62,9 @@ public class SetTest {
     }
 
     public void testForEachForSet(Student student){
-        System.out.println("共选择了"+student.courses.size()+"门课程");
+        System.out.println("共选择了"+student.courseIWantToSelect.size()+"门课程");
         //打印输出学生所选课程，只能用forEach或iterator
-        for (Course course : student.courses){
+        for (Course course : student.courseIWantToSelect){
             System.out.println("选择了课程："+","+course.id+","+course.name);
         }
     }
@@ -83,11 +83,11 @@ public class SetTest {
             String courseID = input.next();
             for (Course course : setTest.coursesList) {
                 if (courseID.equals(course.id)) {
-                    student.courses.add(course);
+                    student.courseIWantToSelect.add(course);
                     //验证Set中不允许包含相同元素
-                    student.courses.add(course);
+                    student.courseIWantToSelect.add(course);
                     //添加空对象
-                    student.courses.add(null);
+                    student.courseIWantToSelect.add(null);
                 }
             }
         }
