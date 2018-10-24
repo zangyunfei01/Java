@@ -46,7 +46,7 @@ public class SetTest {
 
     public void testForEachForWhatDoesTomSelect(Student student) {
         for (Course course : student.courseIWantToSelect) {
-            System.out.println("选了如下课程：" + course.name);
+            System.out.println("选了如下课程：" + course.id+","+course.name);
         }
     }
 
@@ -65,8 +65,8 @@ public class SetTest {
                 if (courseID.equals(course.id)) {
                     student.courseIWantToSelect.add(course);
                     student.courseIWantToSelect.add(course);
-                    student.courseIWantToSelect.add(null);
-                    System.out.println("已选择课程：" + course.name);
+                    //student.courseIWantToSelect.add(null);
+                    System.out.println("已选择课程：" + course.id + "," + course.name);
                 }
             }
         }
