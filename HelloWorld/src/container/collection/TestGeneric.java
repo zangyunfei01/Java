@@ -12,7 +12,7 @@ public class TestGeneric {
 
     public void testAdd(){
         Course course9 = new Course("9","昕爷");
-        Course course10 = new Course("10","王晓妮");
+        Course course10 = new Course("10","王晓斌");
         coursesList.add(course9);
         coursesList.add(course10);
         System.out.println("通过泛型，指定元素类型来向集合中添加元素:"+course9.name+","+course10.name);
