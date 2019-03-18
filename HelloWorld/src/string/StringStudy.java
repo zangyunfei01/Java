@@ -36,6 +36,5 @@ public class StringStudy {
 
         System.out.println(str3);
         System.out.println(str5.intern());
-
     }
 }
