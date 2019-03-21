@@ -104,6 +104,21 @@ public class StringTest {
         return new String(c);
     }
 
+    //斐波那契数列
+    public void feibonaqi(int x){
+        int a = 0;
+        int b = 1;
+        for (int i = 0;i < x;i ++){
+            System.out.println(b);
+            int m = b;
+            int n = a + b;
+            a = m;
+            b = n;
+        }
+    }
+
+
+
     public static void main(String[] args) {
         int[] score = {1, 2, 3, 4, 5};
         for (int i : score) {
@@ -129,5 +144,6 @@ public class StringTest {
         System.out.println("s1的值是：" + s1);
         stringTest.charCountInString("fgfgfgfg", 0);
         System.out.println("反转字符串：" + stringTest.test1("  "));
+        stringTest.feibonaqi(6);
     }
 }
