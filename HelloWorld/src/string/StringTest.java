@@ -27,19 +27,19 @@ public class StringTest {
     }
 
     //选择排序
-    public void selectSort(int array[]) {
-        int t = 0;
-        for (int i = 0; i < array.length - 1; i++) {
-            int index = i;
-            for (int j = 0; j < array.length; j++) {
-                if (array[index] > array[j]) {
-                    index = j;
+    public void test(int array[]) {
+        int len = array.length;
+        for (int i = 0; i < len - 1; i++) {
+            int k = i;
+            for (int j = i + 1; j < len - i - 1; j++) {
+                if (array[j] < array[i]) {
+                    k = j;
                 }
-            }
-            if (index != i) {
-                t = array[i];
-                array[i] = array[index];
-                array[index] = t;
+                if (i != k) {
+                    int t = array[j];
+                    array[j] = array[i];
+                    array[i] = t;
+                }
             }
         }
     }
@@ -73,10 +73,11 @@ public class StringTest {
         }
     }
 
+
     public static boolean isIpLegal(String ipStr) {
         //ip地址范围：(1~255).(0~255).(0~255).(0~255)
-        String ipRegEx = "^([1-9]|([1-9][0-9])|(1[0-9][0-9])|(2[0-4][0-9])|(25[0-5]))(\\.([0-9]|([1-9][0-9])|" + "(1" +
-                "[0-9][0-9])|(2[0-4][0-9])|(25[0-5]))){3}$";
+        String ipRegEx =
+                "^([1-9]|([1-9][0-9])|(1[0-9][0-9])|(2[0-4][0-9])|(25[0-5]))(\\.([0-9]|([1-9][0-9])|" + "(1" + "[0-9" + "][0-9])|(2[0-4][0-9])|(25[0-5]))){3}$";
         //String ipRegEx = "^([1-9]|([1-9]\\d)|(1\\d{2})|(2[0-4]\\d)|(25[0-5]))(\\.(\\d|([1-9]\\d)|(1\\d{2})|
         // (2[0-4]\\d)|(25[0-5]))){3}$";
         //String ipRegEx = "^(([1-9]\\d?)|(1\\d{2})|(2[0-4]\\d)|(25[0-5]))(\\.(0|([1-9]\\d?)|(1\\d{2})|(2[0-4]\\d)|
@@ -94,21 +95,22 @@ public class StringTest {
     //反转字符串测试
     public String test1(String s) {
         int length = s.length();
-        if (s == null || length == 0){
+        if (s == null || length == 0) {
             return s;
         }
         char[] c = s.toCharArray();
-        for (int i = 0;i < length;i ++) {
+        for (int i = 0; i < length; i++) {
             c[i] = s.charAt(length - 1 - i);
         }
         return new String(c);
     }
 
+
     //斐波那契数列
-    public void feibonaqi(int x){
+    public void feibonaqi(int x) {
         int a = 0;
         int b = 1;
-        for (int i = 0;i < x;i ++){
+        for (int i = 0; i < x; i++) {
             System.out.println(b);
             int m = b;
             int n = a + b;
@@ -116,7 +118,6 @@ public class StringTest {
             b = n;
         }
     }
-
 
 
     public static void main(String[] args) {
@@ -138,12 +139,14 @@ public class StringTest {
         stringTest.bubbleSort(num3);
         //stringTest.bubbleSortTest(num3);
         System.out.println(Arrays.toString(num3));
-        stringTest.selectSort(num4);
+        System.out.println(num3[num3.length - 1]);
         System.out.println(Arrays.toString(num4));
         String s1 = stringTest.reverseStringTest("数组转成字符串，直接return new String(char[])");
         System.out.println("s1的值是：" + s1);
         stringTest.charCountInString("fgfgfgfg", 0);
         System.out.println("反转字符串：" + stringTest.test1("  "));
         stringTest.feibonaqi(6);
+        stringTest.test(num3);
+        System.out.println(Arrays.toString(num3));
     }
 }
