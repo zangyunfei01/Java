@@ -2,10 +2,11 @@ package string;
 
 
 import com.sun.source.tree.BinaryTree;
+import org.w3c.dom.ranges.Range;
 
+import javax.sound.midi.Soundbank;
 import javax.xml.crypto.Data;
-import java.util.Arrays;
-import java.util.Scanner;
+import java.util.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -108,15 +109,53 @@ public class StringTest {
 
     //斐波那契数列
     public void feibonaqi(int x) {
-        int a = 0;
+        int a = 1;
         int b = 1;
+        List list = new ArrayList();
         for (int i = 0; i < x; i++) {
-            System.out.println(b);
+            list.add(a);
             int m = b;
             int n = a + b;
             a = m;
             b = n;
         }
+        System.out.println(list.get(x - 1));
+    }
+
+    //素数，比1大的数中，除了1和本身没有其他因数的数
+    public void sushu() {
+        List list = new ArrayList();
+        boolean isSuShu = true;
+        for (int i = 101;i <= 200;i ++){
+            if (i % 2 == 0)
+                continue;
+            for (int j = 2;j < i;j ++){
+                if (i % j == 0){
+                    isSuShu = false;
+                    break;
+                }
+            }
+            list.add(i);
+        }
+        System.out.println(list);
+    }
+
+    //给定一个数，一个列表，如果列表中的两个数的和等于给定的数，则打印出这俩数来
+    public void kuaishou(){
+        int x = 10;
+        //这里之所以用Integer是因为泛型中存放的是对象类型，基本数据类型是不能作为对象的，所以这里用int的包装类Integer
+        Integer i[] = {1,2,3,4,5,6,7,8,9,10};
+        List<Integer> list = Arrays.asList(i);
+        for (Integer m : list){
+            for (Integer n:list){
+                if (m >= n)
+                    continue;
+                if (m + n == x){
+                    System.out.println(m+" "+ n);
+                }
+            }
+        }
+        System.out.println(list);
     }
 
 
@@ -148,5 +187,8 @@ public class StringTest {
         stringTest.feibonaqi(6);
         stringTest.test(num3);
         System.out.println(Arrays.toString(num3));
+        stringTest.feibonaqi(5);
+        stringTest.sushu();
+        stringTest.kuaishou();
     }
 }
