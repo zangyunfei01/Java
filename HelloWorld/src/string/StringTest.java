@@ -126,11 +126,11 @@ public class StringTest {
     public void sushu() {
         List list = new ArrayList();
         boolean isSuShu = true;
-        for (int i = 101;i <= 200;i ++){
+        for (int i = 101; i <= 200; i++) {
             if (i % 2 == 0)
                 continue;
-            for (int j = 2;j < i;j ++){
-                if (i % j == 0){
+            for (int j = 2; j < i; j++) {
+                if (i % j == 0) {
                     isSuShu = false;
                     break;
                 }
@@ -141,21 +141,36 @@ public class StringTest {
     }
 
     //给定一个数，一个列表，如果列表中的两个数的和等于给定的数，则打印出这俩数来
-    public void kuaishou(){
+    public void kuaishou() {
         int x = 10;
         //这里之所以用Integer是因为泛型中存放的是对象类型，基本数据类型是不能作为对象的，所以这里用int的包装类Integer
-        Integer i[] = {1,2,3,4,5,6,7,8,9,10};
+        Integer i[] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
         List<Integer> list = Arrays.asList(i);
-        for (Integer m : list){
-            for (Integer n:list){
+        for (Integer m : list) {
+            for (Integer n : list) {
+                //加这一步是避免1 9 ，9 1这种打印两次
                 if (m >= n)
                     continue;
-                if (m + n == x){
-                    System.out.println(m+" "+ n);
+                if (m + n == x) {
+                    System.out.println(m + " " + n);
                 }
             }
         }
         System.out.println(list);
+    }
+
+    public void kuaishou2(int array[]) {
+        int x = 10;
+        for (int i = 0; i < array.length; i++) {
+            for (int j = 0; j < array.length; j++) {
+                //通过index保证int[i]和int[j]重复打印的情况
+                if (i >= j)
+                    continue;
+                if (array[i] + array[j] == x) {
+                    System.out.println("第" + i + "位：" + array[i] + " 第" + j + "位：" + array[j]);
+                }
+            }
+        }
     }
 
 
@@ -190,5 +205,7 @@ public class StringTest {
         stringTest.feibonaqi(5);
         stringTest.sushu();
         stringTest.kuaishou();
+
+        stringTest.kuaishou2(num3);
     }
 }

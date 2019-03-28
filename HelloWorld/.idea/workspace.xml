@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="acbf8eeb-bacf-45ba-afd5-e90a2f1d1470" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/HelloWorld/string/StringTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HelloWorld/string/StringTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/string/Regex.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/string/Regex.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/string/StringTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/string/StringTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -19,8 +16,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/string/StringTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="116">
-              <caret line="145" column="33" selection-start-line="145" selection-start-column="33" selection-end-line="145" selection-end-column="33" />
+            <state relative-caret-position="113">
+              <caret line="167" column="29" lean-forward="true" selection-start-line="167" selection-start-column="29" selection-end-line="167" selection-end-column="29" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -241,7 +238,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553787533468" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553789040046" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
@@ -673,8 +670,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/string/StringTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="116">
-          <caret line="145" column="33" selection-start-line="145" selection-start-column="33" selection-end-line="145" selection-end-column="33" />
+        <state relative-caret-position="113">
+          <caret line="167" column="29" lean-forward="true" selection-start-line="167" selection-start-column="29" selection-end-line="167" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
