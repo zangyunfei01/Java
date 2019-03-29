@@ -26,8 +26,9 @@ public class Regex {
      */
 
     public boolean ipLegal() {
-        String ipRegEx = "^([1-9]|([1-9][0-9])|(1[0-9][0-9])|(2[0-4][0-9])|(25[0-5]))(.([0-9]|([1-9][0-9])|" + "(1[0" +
-                "-9][0-9])|(2[0-4][0-9])|(25[0-5]))){3}$";
+        String ipRegEx =
+                "^([1-9]|([1-9][0-9])|(1[0-9][0-9])|(2[0-4][0-9])|(25[0-5]))(.([0-9]|([1-9][0-9])|" + "(1[0" + "-9][0" +
+                        "-9])|(2[0-4][0-9])|(25[0-5]))){3}$";
         Pattern p = Pattern.compile(ipRegEx);
         Scanner scanner = new Scanner(System.in);
         System.out.println("请输入ip：");
@@ -59,6 +60,20 @@ public class Regex {
         }
     }
 
+    //1.255.255.255
+    public boolean test(String string) {
+        String regex = "[1-9]|[1-9]\\d|1\\d{2}|2[0-4]\\d|25[0-5]";
+        Pattern pattern = Pattern.compile(regex);
+        Matcher matcher = pattern.matcher(string);
+        if (matcher.matches()) {
+            System.out.println("合法");
+            return true;
+        } else {
+            System.out.println("不合法");
+            return false;
+        }
+    }
+
     public static void main(String[] args) {
 
         //字符串的作用：1.匹配 2.替换 3.切割 4.获取
@@ -73,11 +88,12 @@ public class Regex {
         String regex2 = "(.)\\1+";
         String regex3 = "^1(38|57|89)[0-9]{8}";
         String regex4 = "^[1-9]\\d{2}-\\d{3}.\\d{3}";
-        //System.out.println(xiabida.matches(regex4));
-        //System.out.println(QQ.replaceAll(regex2,"$1"));
-        //System.out.println(phoneNumber.matches(regex3));
-        //System.out.println(phoneNumber.replaceAll(regex3,"****"));
+        System.out.println(xiabida.matches(regex4));
+        System.out.println(QQ.replaceAll(regex2,"$1"));
+        System.out.println(phoneNumber.matches(regex3));
+        System.out.println(phoneNumber.replaceAll(regex3,"****"));
         regex.phoneNumberLegalTest();
+        regex.test("255");
     }
 
 }
