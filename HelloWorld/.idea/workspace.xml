@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="acbf8eeb-bacf-45ba-afd5-e90a2f1d1470" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/out/production/HelloWorld/META-INF/HelloWorld.kotlin_module" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/HelloWorld/singletonpattern/SingleObject.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/HelloWorld/singletonpattern/SingleObjectTest.class" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/singletonpattern/SingleObject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/singletonpattern/SingleObjectTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/HelloWorld/string/Regex.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HelloWorld/string/Regex.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/string/Regex.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/string/Regex.java" afterDir="false" />
@@ -49,8 +53,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/singletonpattern/SingleObject.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="17" column="37" selection-start-line="17" selection-start-column="37" selection-end-line="17" selection-end-column="37" />
+            <state relative-caret-position="405">
+              <caret line="17" column="34" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="34" />
               <folding>
                 <element signature="e#299#300#0" expanded="true" />
                 <element signature="e#340#341#0" expanded="true" />
@@ -64,8 +68,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/singletonpattern/SingleObjectTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="52">
-              <caret line="2" column="29" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="29" />
+            <state relative-caret-position="286">
+              <caret line="11" column="32" lean-forward="true" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -144,7 +148,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/collection/ListTest1.java" />
         <option value="$PROJECT_DIR$/src/Test.java" />
         <option value="$PROJECT_DIR$/src/A.java" />
         <option value="$PROJECT_DIR$/src/collection/IteratorExample.java" />
@@ -195,13 +198,14 @@
         <option value="$PROJECT_DIR$/src/SingleObjectTest.java" />
         <option value="$PROJECT_DIR$/src/SingleObject.java" />
         <option value="$PROJECT_DIR$/src/singletonpattern/SingleObject.java" />
+        <option value="$PROJECT_DIR$/src/singletonpattern/SingleObjectTest.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" fullScreen="true">
     <option name="y" value="23" />
     <option name="width" value="1440" />
-    <option name="height" value="802" />
+    <option name="height" value="801" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -222,12 +226,6 @@
               <item name="HelloWorld" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="HelloWorld" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HelloWorld" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="singletonpattern" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -236,7 +234,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553855799077" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553858002290" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
@@ -400,7 +398,7 @@
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="802" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.32474965" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.32474965" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -414,7 +412,7 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49353796" weight="0.32957748" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" sideWeight="0.49353796" visible="true" weight="0.32957748" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50646204" side_tool="true" weight="0.3287483" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.32676056" />
@@ -430,13 +428,6 @@
     </layout>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/src.zip!/java/util/AbstractCollection.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="962">
-          <caret line="60" column="61" selection-start-line="60" selection-start-column="61" selection-end-line="60" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/collection/IteratorExample.java" />
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/src.zip!/java/lang/Iterable.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -676,14 +667,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/singletonpattern/SingleObject.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="17" column="37" selection-start-line="17" selection-start-column="37" selection-end-line="17" selection-end-column="37" />
+        <state relative-caret-position="405">
+          <caret line="17" column="34" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="34" />
           <folding>
             <element signature="e#299#300#0" expanded="true" />
             <element signature="e#340#341#0" expanded="true" />
             <element signature="e#390#391#0" expanded="true" />
             <element signature="e#426#427#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/singletonpattern/SingleObjectTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="11" column="32" lean-forward="true" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
         </state>
       </provider>
     </entry>
