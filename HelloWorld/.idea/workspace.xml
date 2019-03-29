@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="acbf8eeb-bacf-45ba-afd5-e90a2f1d1470" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/out/production/HelloWorld/META-INF/HelloWorld.kotlin_module" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/HelloWorld/singletonpattern/SingleObject.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/HelloWorld/singletonpattern/SingleObjectTest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/singletonpattern/SingleObject.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/singletonpattern/SingleObjectTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/HelloWorld/string/Regex.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HelloWorld/string/Regex.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/string/Regex.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/string/Regex.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -21,10 +15,13 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/string/BinaryTree.java">
+        <entry file="file://$PROJECT_DIR$/src/string/StringTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="494">
-              <caret line="19" selection-start-line="19" selection-end-line="19" />
+            <state relative-caret-position="516">
+              <caret line="79" column="22" selection-start-line="79" selection-start-column="17" selection-end-line="79" selection-end-column="22" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -38,11 +35,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/string/Regex.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="90" column="50" selection-start-line="90" selection-start-column="50" selection-end-line="90" selection-end-column="50" />
+            <state relative-caret-position="231">
+              <caret line="92" column="53" lean-forward="true" selection-start-line="92" selection-start-column="53" selection-end-line="92" selection-end-column="53" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -53,8 +50,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/singletonpattern/SingleObject.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="17" column="34" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="34" />
+            <state relative-caret-position="327">
+              <caret line="13" column="33" lean-forward="true" selection-start-line="13" selection-start-column="33" selection-end-line="13" selection-end-column="33" />
               <folding>
                 <element signature="e#299#300#0" expanded="true" />
                 <element signature="e#340#341#0" expanded="true" />
@@ -65,7 +62,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/singletonpattern/SingleObjectTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="286">
@@ -194,11 +191,11 @@
         <option value="$PROJECT_DIR$/src/string/NodeTree.java" />
         <option value="$PROJECT_DIR$/src/string/BinaryTree.java" />
         <option value="$PROJECT_DIR$/src/string/StringTest.java" />
-        <option value="$PROJECT_DIR$/src/string/Regex.java" />
         <option value="$PROJECT_DIR$/src/SingleObjectTest.java" />
         <option value="$PROJECT_DIR$/src/SingleObject.java" />
         <option value="$PROJECT_DIR$/src/singletonpattern/SingleObject.java" />
         <option value="$PROJECT_DIR$/src/singletonpattern/SingleObjectTest.java" />
+        <option value="$PROJECT_DIR$/src/string/Regex.java" />
       </list>
     </option>
   </component>
@@ -226,6 +223,18 @@
               <item name="HelloWorld" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="HelloWorld" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HelloWorld" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="singletonpattern" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="HelloWorld" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HelloWorld" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="string" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -234,7 +243,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553858002290" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553873106557" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
@@ -259,7 +268,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.SingleObjectTest">
+  <component name="RunManager" selected="Application.Regex">
     <configuration default="true" type="Applet">
       <option name="HEIGHT" value="0" />
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
@@ -374,9 +383,9 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Regex" />
         <item itemvalue="Application.SingleObjectTest" />
         <item itemvalue="Application.SingleObject" />
-        <item itemvalue="Application.Regex" />
         <item itemvalue="Application.StringTest" />
         <item itemvalue="Application.BinaryTree" />
       </list>
@@ -396,7 +405,8 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="802" extended-state="0" />
+    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.32474965" />
       <window_info id="Structure" order="1" weight="0.25" />
@@ -407,12 +417,12 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3287483" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3830986" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3819277" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3987952" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" sideWeight="0.49353796" visible="true" weight="0.32957748" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49353796" weight="0.2819277" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50646204" side_tool="true" weight="0.3287483" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.32676056" />
@@ -569,7 +579,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/string/StringTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1872">
+        <state relative-caret-position="516">
           <caret line="79" column="22" selection-start-line="79" selection-start-column="17" selection-end-line="79" selection-end-column="22" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -641,24 +651,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/SingleObjectTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="7" column="15" selection-start-line="7" selection-start-column="15" selection-end-line="7" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SingleObject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="26">
-          <caret line="1" column="13" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SingleObjectTest.java" />
+    <entry file="file://$PROJECT_DIR$/src/SingleObject.java" />
     <entry file="file://$PROJECT_DIR$/src/string/Regex.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="90" column="50" selection-start-line="90" selection-start-column="50" selection-end-line="90" selection-end-column="50" />
+        <state relative-caret-position="231">
+          <caret line="92" column="53" lean-forward="true" selection-start-line="92" selection-start-column="53" selection-end-line="92" selection-end-column="53" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -667,8 +665,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/singletonpattern/SingleObject.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="17" column="34" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="34" />
+        <state relative-caret-position="327">
+          <caret line="13" column="33" lean-forward="true" selection-start-line="13" selection-start-column="33" selection-end-line="13" selection-end-column="33" />
           <folding>
             <element signature="e#299#300#0" expanded="true" />
             <element signature="e#340#341#0" expanded="true" />

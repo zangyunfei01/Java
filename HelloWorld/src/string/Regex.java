@@ -10,19 +10,20 @@ import java.util.regex.Pattern;
 public class Regex {
 
     /**
+     * 字符串的作用：1.匹配 2.替换 3.切割 4.获取
+     *
      * 正则表达式中各种字符的意思：
      * .代表任意字符
      * ^表示字符串开头或非
      * +代表1个或多个字符
      * *代表0个或多个字符
      * ?代表0个或1个字符
-     * $代表字符串结尾
+     * $代表字符串结尾 $1表示前一个参数的第一组
      * []代表字符集，多项单选
      * -表示区间，比如[0-9]表示数字0-9中选其一
-     * ()代表捕获组，()内的称为一个组
+     * ()代表捕获组，()内的称为一个组，捕获组后面的\\i里面的i代表捕获组的位置，从1开始
      * {}表示匹配次数
      * \代表反转，常用的有\\d,表示任意数字；\\w代表任意字符;\\s代表任意白字符，像空格、Tab、\n\r换行，回车
-     * //i里面的i代表捕获组的位置，从1开始
      */
 
     public boolean ipLegal() {
@@ -85,14 +86,16 @@ public class Regex {
         String QQ = "11122222";
         String phoneNumber = "18911281036";
         String xiabida = "123-456.789";
-        String regex2 = "(.)\\1+";
+        String phoneNumber2 = "18310061886";
+        String regex2 = "(.)(.)\\2+";
         String regex3 = "^1(38|57|89)[0-9]{8}";
         String regex4 = "^[1-9]\\d{2}-\\d{3}.\\d{3}";
-        System.out.println(xiabida.matches(regex4));
-        System.out.println(QQ.replaceAll(regex2,"$1"));
+        String regex5 = "(^1\\d{2})(\\d{4})(\\d{4})";
+        System.out.println(QQ.replaceAll(regex2,"$1$2"));
         System.out.println(phoneNumber.matches(regex3));
-        System.out.println(phoneNumber.replaceAll(regex3,"****"));
-        regex.phoneNumberLegalTest();
+        System.out.println(xiabida.matches(regex4));
+        System.out.println(phoneNumber2.replaceAll(regex5,"$1****$3"));
+        //regex.phoneNumberLegalTest();
         regex.test("255");
     }
 
